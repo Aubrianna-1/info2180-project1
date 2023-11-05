@@ -11,7 +11,7 @@ window.addEventListener('load', function(){
         let info = email.value;
 
         if (info){
-            msg.textContent = `Thank you! Your email address '${val}' has been added to our mailing list!`;
+            msg.textContent = `Thank you! Your email address '${info}' has been added to our mailing list!`;
         }
         else{
             msg.textContent = "Please enter a valid email address";
