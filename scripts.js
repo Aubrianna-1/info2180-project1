@@ -3,7 +3,7 @@
 window.addEventListener('load', function(){
 
     let msg = document.querySelector('.message');
-    let email = document.getElementById('email');
+    let email = document.getElementById('email'); /*won't work with querySelector*/
     let btn = document.querySelector('.newsletter .btn');  
 
         btn.addEventListener('click', (event)=>{
