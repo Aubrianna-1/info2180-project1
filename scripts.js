@@ -3,11 +3,14 @@
 window.addEventListener('load', function(){
 
     let msg = document.querySelector('.message');
+
     let email = document.getElementById('email'); /*won't work with querySelector*/
-    let btn = document.querySelector('.newsletter .btn');  
+    let btn = document.querySelector('.newsletter .btn'); 
+
 
         btn.addEventListener('click', (event)=>{
-        event.preventDefault();
+        event.preventDefault(); /*page will immediately refresh without*/
+        
         let info = email.value;
 
         if (info){
