@@ -5,8 +5,8 @@ window.addEventListener('load', function(){
     let msg = document.querySelector('.message');
 
     let email = document.getElementById('email'); /*won't work with querySelector*/
-    let btn = document.querySelector('.newsletter .btn'); 
-
+    
+    const btn = document.querySelector('.newsletter .btn'); 
 
         btn.addEventListener('click', (event)=>{
         event.preventDefault(); /*page will immediately refresh without*/
@@ -19,6 +19,7 @@ window.addEventListener('load', function(){
         else{
             msg.textContent = "Please enter a valid email address";
         }
+
         email.value = '';
     });
 });
